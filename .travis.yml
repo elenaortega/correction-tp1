@@ -1,3 +1,23 @@
 language:java
 script:
-  - #TODO : test and build your application with maven
+  # Test and build app
+  - mvn clean verify --file ./simple-api/pom.xml
+
+  # Connexion à docker
+  - echo "$DockerPassword" | docker login -u "$DockerUserName" --password-stdin
+
+  # Build
+  - docker build -t $DockerUserName/tp-devops .
+
+  # Publication des images
+  - docker push $DockerUserName/tp-devops
+
+on:
+  branch: develop
+
+cache:
+  directories:
+    - $HOME/.m2
+
+services:
+  - docker
