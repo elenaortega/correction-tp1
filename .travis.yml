@@ -13,7 +13,7 @@ script:
   - docker push $dockerUserName/tp-devops
 
   # Sonarcloud
-  - mvn clean verify org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=elenaortega_correction-tp1
+  - mvn clean verify org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=elenaortega_correction-tp1 --file ./simple-api/pom.xml
 
   addons:
     sonarcloud:
