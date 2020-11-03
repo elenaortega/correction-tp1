@@ -18,7 +18,7 @@ script:
   addons:
     sonarcloud:
       oganization: "elenaortega"
-        token: "20c33928cd48f8bf50540752da1dbd1d86e51933"
+        token: "$elenatoken"
 
 on:
   branch: develop
