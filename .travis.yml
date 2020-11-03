@@ -12,6 +12,14 @@ script:
   # Publication des images
   - docker push $dockerUserName/tp-devops
 
+  # Sonarcloud
+  - mvn clean verify org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=elenaortega_correction-tp1
+
+  addons:
+    sonarcloud:
+      oganization: "elenaortega"
+        token: "20c33928cd48f8bf50540752da1dbd1d86e51933"
+
 on:
   branch: develop
 
