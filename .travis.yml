@@ -17,7 +17,7 @@ script:
 
 addons:
   sonarcloud:
-    oganization: "elenaortega";
+    oganization: "elenaortega"
     token: "$elenatoken"
 
 on:
