@@ -15,10 +15,10 @@ script:
   # Sonarcloud
   - mvn clean verify org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=elenaortega_correction-tp1 --file ./simple-api/pom.xml
 
-  addons:
-    sonarcloud:
-      oganization: "elenaortega"
-        token: "$elenatoken"
+addons:
+  sonarcloud:
+    oganization: "elenaortega"
+      token: "$elenatoken"
 
 on:
   branch: develop
