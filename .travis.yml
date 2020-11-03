@@ -4,13 +4,13 @@ script:
   - mvn clean verify --file ./simple-api/pom.xml
 
   # Connexion à docker
-  - echo "$DockerPassword" | docker login -u "$DockerUserName" --password-stdin
+  - echo "$DockerPassword" | docker login -u "$dockerUserName" --password-stdin
 
   # Build
-  - docker build -t $DockerUserName/tp-devops .
+  - docker build -t $dockerUserName/tp-devops .
 
   # Publication des images
-  - docker push $DockerUserName/tp-devops
+  - docker push $dockerUserName/tp-devops
 
 on:
   branch: develop
