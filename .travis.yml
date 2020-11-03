@@ -7,7 +7,7 @@ script:
   - echo "$dockerPassword" | docker login -u "$dockerUserName" --password-stdin
 
   # Build
-  - docker build -t $dockerUserName/tp-devops .
+  - docker build -t $dockerUserName/tp-devops simple-api
 
   # Publication des images
   - docker push $dockerUserName/tp-devops
