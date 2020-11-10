@@ -4,6 +4,7 @@
   docker_container:
     name: httpd
     image: elenaortega/tp-devops:httpd
+    pull: yes
     state: present
     networks:
       - name: app-network

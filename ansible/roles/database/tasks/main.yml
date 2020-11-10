@@ -4,6 +4,7 @@
   docker_container:
     name: database
     image: elenaortega/tp-devops:database
+    pull: yes
     state: present
     networks:
       - name: app-network
