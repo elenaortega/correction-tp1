@@ -1,9 +1,11 @@
 ---
 # tasks file for roles/proxy
 - name: Launch proxy
-  docker_network:
-    name: reverse_proxy
-    network:
+  docker_container:
+    name: httpd
+    image: elenaortega/tp-devops:httpd
+    state: present
+    networks:
       - name: app-network
     ports:
       - "80:80"
