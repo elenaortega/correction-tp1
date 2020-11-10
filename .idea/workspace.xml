@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9a5615b-330e-45ae-85e1-9fb308406c86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ansible/inventories/setup.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/playbook.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/simple-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/simple-api/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604410851365</updated>
       <workItem from="1604410853507" duration="6552000" />
-      <workItem from="1604926606142" duration="11665000" />
+      <workItem from="1604926606142" duration="12403000" />
     </task>
     <servers />
   </component>
