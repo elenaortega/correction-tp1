@@ -1,0 +1,9 @@
+---
+# tasks file for roles/proxy
+- name: Launch proxy
+  docker_network:
+    name: reverse_proxy
+    network:
+      - name: app-network
+    ports:
+      - "80:80"

@@ -1,0 +1,13 @@
+---
+# tasks file for roles/database
+- name: Launch database
+  docker_container:
+    name: database
+    image: elenaortega/tp-devops:database
+    state: present
+    networks:
+      - name: app-network
+    env:
+      POSTGRES_PASSWORD=pwd
+      POSTGRES_USER=usr
+      POSTGRES_DB=db
